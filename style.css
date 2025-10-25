@@ -1,48 +1,26 @@
-/* 🌸 Angel's Quizzy Theme 🌸 */
-body {
-    background: linear-gradient(135deg, #fce3ff, #d9e9ff);
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    text-align: center;
-    padding: 40px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angel’s Quizzy Corner 🌷</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to My Quizzy Page 💭</h1>
+    <p>Feeling curious today? Let’s test your mood!</p>
 
-h1 {
-    font-size: 2.5em;
-    color: #a64dff;
-    text-shadow: 2px 2px #fff;
-    margin-bottom: 10px;
-}
+    <button onclick="startQuiz()">Take a Quick Quiz 🌸</button>
 
-p {
-    font-size: 1.2em;
-    color: #444;
-    margin-bottom: 30px;
-}
+    <footer>Made with love by Angel 💖</footer>
 
-button {
-    background-color: #a64dff;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 12px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #9140e8;
-    transform: scale(1.05);
-}
-
-footer {
-    margin-top: 40px;
-    font-size: 0.9em;
-    color: #777;
-} 
+    <script>
+        function startQuiz() {
+            const answer = prompt("If you could describe your vibe right now in one word, what would it be?");
+            if (answer) {
+                alert("That’s so '" + answer + "' of you ✨");
+            } else {
+                alert("You’re mysterious today 👀");
+            }
+        }
+    </script>
+</body>
+</html>
