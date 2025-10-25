@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My first Github website</title>
+<head>
+    <title>Angel’s Quizzy Corner 🌷</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body style="font-family: sans-serif; text-align: center; margin-top: 50px;"> 
-    <h1>Hello world</h1>
-    <p>My very first website on github!
-    </p>
-    </body>
+</head>
+<body>
+    <h1>Welcome to My Quizzy Page 💭</h1>
+    <p>Feeling curious today? Let’s test your mood!</p>
+
+    <button onclick="startQuiz()">Take a Quick Quiz 🌸</button>
+
+    <footer>Made with love by Angel 💖</footer>
+
+    <script>
+        function startQuiz() {
+            const answer = prompt("If you could describe your vibe right now in one word, what would it be?");
+            if (answer) {
+                alert("That’s so '" + answer + "' of you ✨");
+            } else {
+                alert("You’re mysterious today 👀");
+            }
+        }
+    </script>
+</body>
 </html>
