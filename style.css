@@ -1,0 +1,48 @@
+/* 🌸 Angel's Quizzy Theme 🌸 */
+body {
+    background: linear-gradient(135deg, #fce3ff, #d9e9ff);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #a64dff;
+    text-shadow: 2px 2px #fff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #a64dff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #9140e8;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+} 
