@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Angel’s Quizzy Corner 🌸</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Dramatic Are You, Really?</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <h1>Welcome to My Quizzy Page ☁️</h1>
-  <p>Feeling curious today? Let’s test your mood!</p>
+  <div class="quiz-container">
+    <h1>How Dramatic Are You, Really?</h1>
 
-  <button onclick="startQuiz()">Take a Quick Quiz!</button>
+    <div id="start-screen">
+      <button id="start-btn">✨ Start the Quiz ✨</button>
+    </div>
 
-  <footer>Made with love by Angel 💖</footer>
+    <div id="quiz" class="hidden">
+      <div id="question"></div>
+      <div id="answers"></div>
+      <button id="next-btn" class="hidden">Next</button>
+    </div>
 
-  <script>
-    function startQuiz() {
-      const answer = prompt("If you could be any color, what color would you be today?");
-      if (answer) {
-        alert("That’s so '" + answer + "' of you 💫");
-      } else {
-        alert("You’re mysterious today 🌙");
-      }
-    }
-  </script>
+    <div id="result" class="hidden">
+      <h2 id="result-title"></h2>
+      <p id="result-text"></p>
+      <button id="restart-btn">Try Again</button>
+      <audio id="result-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_73cb65a7e5.mp3?filename=sparkle-1-108327.mp3"></audio>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
