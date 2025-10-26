@@ -1,67 +1,86 @@
 /* 🎀 ANGEL’S QUIZZY THEME 🎀 */
 
 /* Import a cute Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* Page setup */
 body {
-  background: linear-gradient(135deg, #f9c5d1, #ffe7c4, #b5e8f7);
-  font-family: 'Fredoka One', cursive;
-  text-align: center;
   margin: 0;
-  padding: 0;
-  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fce3ec, #f8d3d3, #fce3ec);
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #4a2c2a;
 }
 
-/* Headings */
+.quiz-container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.4);
+  animation: fadeIn 0.8s ease;
+}
+
 h1 {
-  color: #ff66b3;
-  text-shadow: 2px 2px 0 #fff, 3px 3px 5px rgba(0,0,0,0.1);
-  font-size: 2.8rem;
-  margin-bottom: 15px;
-  animation: float 3s ease-in-out infinite;
+  font-size: 1.8rem;
+  color: #a15656;
+  margin-bottom: 1rem;
 }
 
-/* Paragraphs */
-p {
-  color: #444;
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-/* Buttons */
 button {
-  background: linear-gradient(90deg, #ff8cc6, #fddb92, #a1eafb);
+  background: linear-gradient(135deg, #f7b6b2, #f4a9a2, #f5bfb5);
   border: none;
-  border-radius: 50px;
-  padding: 14px 32px;
+  border-radius: 15px;
+  padding: 0.8rem 1.5rem;
   font-size: 1rem;
   color: #fff;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
-  transform: scale(1.1) rotate(-2deg);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.6);
 }
 
-/* Floating animation for title */
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
+.hidden {
+  display: none;
 }
 
-/* Optional cute footer */
-footer {
-  position: absolute;
-  bottom: 15px;
-  font-size: 0.9rem;
-  color: #666;
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.answer-btn {
+  display: block;
+  background: #f7d9d9;
+  color: #4a2c2a;
+  border: 1px solid #f4bcbc;
+  border-radius: 10px;
+  padding: 0.7rem;
+  margin: 0.5rem auto;
+  width: 90%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.answer-btn:hover {
+  background: #f4bcbc;
+  color: white;
+}
+
+#result-title {
+  color: #a15656;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
 }
